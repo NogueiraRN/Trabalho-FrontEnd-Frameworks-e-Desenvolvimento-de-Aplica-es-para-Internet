@@ -1,6 +1,6 @@
-# CE Agora — portal de notícias
+# CE Agora — portal de notícias (versão 2)
 
-Trabalho acadêmico em HTML, CSS e JavaScript puros, inspirado na organização de portais de notícias. Todas as 8 matérias são fictícias. Ilustrações SVG locais incluídas; o site não depende de serviços de imagens, fontes ou bibliotecas externas.
+Trabalho acadêmico em HTML, CSS e JavaScript puros, inspirado na organização de portais de notícias. Todas as 8 matérias são fictícias. Fotografias ilustrativas locais incluídas, com fontes em creditos.html; o site não depende de serviços externos para carregar imagens, fontes ou bibliotecas. As fotos não documentam os eventos fictícios descritos.
 
 ## 1. Abrir no VS Code
 
@@ -23,7 +23,8 @@ Trabalho acadêmico em HTML, CSS e JavaScript puros, inspirado na organização 
 - materia.html: página compartilhada para notícias criadas pelo painel.
 - materias/: oito arquivos HTML, um para cada notícia inicial.
 - js/dados.js: títulos, resumos, categorias e textos iniciais.
-- imagens/: sete ilustrações vetoriais SVG usadas nas matérias.
+- imagens/: sete fotografias JPG, favicon e ilustrações SVG da primeira versão.
+- creditos.html: fontes das fotografias e esclarecimento sobre uso ilustrativo.
 - LEIA-ME.md: este guia.
 
 Os HTML das matérias usam script.js para buscar o texto em js/dados.js (ou nas alterações locais do CMS). Por isso não basta enviar apenas um HTML: envie a pasta completa.
@@ -77,3 +78,29 @@ https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a
 “O HTML estrutura as páginas. O CSS cuida do visual responsivo. O JavaScript busca as notícias, aplica filtros e divide os resultados em páginas. O painel demonstra criação, leitura, edição e exclusão de matérias. Os dados ficam no navegador, pois este projeto não possui backend.”
 
 Antes de entregar, leia o código e teste esses fluxos para conseguir explicar o funcionamento.
+
+
+## 8. O que mudou na versão 2
+
+- Cabeçalho vermelho, fundo branco, tipografia maior e layout inspirado em portais como o G1, com identidade CE Agora.
+- Manchete principal e dois destaques fotográficos.
+- Feed com fotos, resumo, cidade, categoria e tempo estimado de leitura.
+- Coluna lateral com links de cidades, seleção editorial e assuntos (não há contagem inventada de notícias mais lidas).
+- Menu recolhível, melhorias de layout no celular e botão para voltar ao topo.
+- Página da matéria com crédito da foto, botão de copiar link, progresso de leitura e duas sugestões de notícias.
+- Formulários mais claros e opção de mostrar/ocultar senha.
+- Painel com contadores de matérias/categorias/cidades e prévia da foto.
+- Armazenamento compatível com a primeira versão: contas e notícias locais permanecem ao atualizar no mesmo endereço.
+
+## 9. Atualizar o projeto já publicado no GitHub
+
+1. Extraia o novo ZIP em uma pasta separada para não confundir com a versão anterior.
+2. No repositório existente, vá em Add file → Upload files.
+3. Arraste todo o CONTEÚDO da pasta portal-noticias: arquivos soltos e as pastas imagens, js e materias.
+4. Os arquivos com os mesmos nomes e caminhos serão atualizados. O README.md que você escreveu no GitHub será preservado: este pacote não contém esse arquivo.
+5. Confirme em Commit changes. Aguarde a publicação em Actions terminar com sucesso e recarregue o site com Ctrl + F5.
+6. Seu link público continua o mesmo. Não é necessário criar outro repositório nem apagar os dados do navegador.
+
+As fotos foram obtidas no Pexels. Veja as páginas de origem e autoria em creditos.html e os termos em https://www.pexels.com/license/. Fotos temáticas de banco de imagens; os fatos narrados nas matérias são fictícios.
+
+Validação desta versão: navegação das oito matérias, paginação, busca, filtros, cadastro e login de leitor, login administrativo, criação/edição/exclusão de matéria e persistência após recarregar foram testados em Chromium. A adaptação para celular foi verificada em 390 px.
